@@ -52,11 +52,12 @@ class App extends Component {
   };
 
   render() {
+    const { result } = this.state;
     return (
       <div>
         <div className="calculator-body">
           <h1>Simple Calculator</h1>
-          <ResultComponent result={this.state.result} />
+          <ResultComponent result={result} />
           <KeyPadComponent onClick={this.onClick} />
         </div>
       </div>
